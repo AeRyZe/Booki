@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/83ac43579f.js" crossorigin="anonymous"></script>
     <title>Accueil</title>
 </head>
 <body>
@@ -22,21 +23,23 @@
         <section class="search">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-            <div class="bar">
-                <form method="get" action="#">
-                    <div class="leftbar">
-                        <div>
-                            <img src="./images/icons/vector.png" alt="Icône de localisation"/>
+            <form action="#salut" method="get"></form> 
+                <div class="barre-container">
+                    
+                    <div class="barre-search">
+                        <div class="search-gauche">
+                            <div class="location-container"><i class="fa-solid fa-location-dot"></i></div>
+                        </div>
+                        <div class="search-millieu">
+                            <input class="input-millieu" type="text" value="Marseille, France" placeholder="Où vas t-on ?" required>
+                        </div>
+                        <div class="search-droite">
+                            <input class="input-droite" type="submit" value="Rechercher">
                         </div>
                     </div>
-                    <div class="middlebar">
-                        <input class="sbar" type="text" placeholder="Où partez-vous ?" value="Marseille, France" style="font-size: 18px;" required/>
-                    </div>
-                    <div>
-                        <input class="rightbar" type="submit" value="Rechercher" style="border: none;"/>
-                    </div>
-                </form>
-            </div>
+                    
+                </div>
+            </form>
         </section>
     </main>
     <footer>

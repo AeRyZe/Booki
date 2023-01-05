@@ -63,28 +63,104 @@ h2 {
     font-weight: 950;
 }
 
-.bar {
+/***************************************************************************/
+
+.barre-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
     margin-top: 20px;
 }
 
-.leftbar {
+.barre-search {
     height: 50px;
-    width: 50px;
-    background-color: #F2F2F2;
-    border-radius: 15px 0 0 15px;
+    width: 332px;
     display: flex;
-    flex-direction: column;
+}
+
+.search-gauche {
+    border-bottom: 1px solid #D9D9D9;
+    border-left: 1px solid #D9D9D9;
+    border-top: 1px solid #D9D9D9;
+    background-color: #D9D9D9;
+    height: 50px;
+    width: 80px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.location-container {
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
+
+.search-millieu {
+    height: 50px;
+    width: 332px;
+    border: 1px solid #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+}
+
+.input-millieu {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 950;
+    font-size: 15px;
+    border: none;
+    height: 90%;
+    width: 90%;
+}
+
+.input-millieu:focus {
+    outline: none;
+}
+
+.search-droite {
+    border-top: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    background-color: #0065FC;
+    height: 50px;
+    width: 200px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+.input-droite {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 950;
+    font-size: 15px;
+    display: flex;
+    width: 99%;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #0065FC;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+/*                                                                          */
+
 
 .sbar {
     font-family: "Raleway", sans-serif;
     font-weight: 950;
     text-align: center;
-    height: 50px;
+    height: 49px;
     width: 332px;
-    border-radius: 15px;
+}
+
+.sbar:focus {
+    outline: none;
 }
 
 .rightbar {
@@ -96,11 +172,8 @@ h2 {
     font-size: 18px;
     background-color: #0065FC;
     color: white;
-    border-radius: 0 15px 15px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 /* TABLETTES */
