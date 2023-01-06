@@ -25,21 +25,52 @@
             <p>En plein centre-ville ou en pleine nature</p>
             <form action="#salut" method="get"></form> 
                 <div class="barre-container">
-                    
                     <div class="barre-search">
                         <div class="search-gauche">
                             <div class="location-container"><i class="fa-solid fa-location-dot"></i></div>
                         </div>
                         <div class="search-millieu">
-                            <input class="input-millieu" type="text" value="Marseille, France" placeholder="Où vas t-on ?" required>
+                            <input class="input-millieu" type="text" value="Marseille, France" placeholder="Où allons-nous ?" required>
                         </div>
                         <div class="search-droite">
                             <input class="input-droite" type="submit" value="Rechercher">
                         </div>
                     </div>
-                    
                 </div>
             </form>
+        </section>
+        <section class="filters">
+            <div class="filters-container">
+                <div class="filters-buttons">
+                    <div><h2>Filtres</h2></div>
+                    <div class="first-filter">
+                        <div class="icon-container">
+                            <button class="button">
+                                <i class="fa-solid fa-money-bill-wave" id="icon"></i>
+                                Économique
+                            </button>
+                        </div>
+                    </div>
+                    <div class="second-button">
+                        <button class="button">
+                            <i class="fa-solid fa-person" id="icon"></i>
+                            Familial
+                        </button>
+                    </div>
+                    <div class="third-button">
+                        <button class="button">
+                            <i class="fa-solid fa-heart"></i>
+                            Romantique
+                        </button>
+                    </div>
+                    <div class="fourth-button">
+                        <button class="button">
+                            <i class="fa-solid fa-dog"></i>
+                            Animaux autorisés
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
