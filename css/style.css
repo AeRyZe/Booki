@@ -5,7 +5,7 @@
 }
 
 header {
-    padding: 50px 10px 50px 50px;
+    padding: 50px;
 }
 
 body {
@@ -18,7 +18,7 @@ section {
 
 nav {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -32,10 +32,11 @@ nav img:hover {
 }
 
 nav div a {
+    font-size: 17px;
     color: black;
-    margin-right: 30px;
     padding-left: 25px;
     padding-right: 25px;
+    margin-left: 15px;
 }
 
 nav div a:hover {
@@ -54,18 +55,23 @@ a:visited {
 }
 
 h1 {
-    font-size: 22;
+    font-size: 22px;
     font-weight: 950;
     margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 18;
+    font-size: 18px;
     font-weight: 950;
 }
 
 h3 {
+    font-size: 16px;
     font-weight: 950;
+}
+
+p {
+    font-size: 16px;
 }
 
 .barre-container {
@@ -77,6 +83,7 @@ h3 {
 }
 
 .barre-search {
+    font-size: 18px;
     height: 50px;
     width: 432px;
     display: flex;
@@ -214,27 +221,42 @@ h3 {
 .result-container {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
     align-items: center;
-    gap: 40px;
     margin-bottom: 80px;
+    gap: 30px;
+}
+
+.result-container h3 {
+    font-size: 16px;
+}
+
+.result-container p {
+    font-size: 14px;
 }
 
 .hebergements-container {
-    height: 626px;
-    width: 880px;
+    height: 492px;
+    width: 766px;;
     background-color: #D9D9D9;
     border-radius: 20px;
-    padding: 40px 35px 40px 35px;
+    padding: 40px;
+}
+
+.hebergements-container h1 {
+    margin-bottom: 15px;
+}
+
+#h-h3 {
+    margin-top: 15px;
 }
 
 .populaires-container {
-    height: 626px;
-    width: 350px;
+    height: 492px;
+    width: 380px;
     background-color: #D9D9D9;
     border-radius: 20px;
     padding: 40px 35px 40px 35px;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 .title-icon {
@@ -247,20 +269,12 @@ h3 {
     color: #0065FC;
 }
 
-.result-container h3 {
-    font-size: 16px;
-}
-
-.result-container p {
-    font-size: 14px;
-}
-
 .result-hebergement {
-    height: 180px;
-    width: 220px;
+    height: 170px;
+    width: 210px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .result-top1 {
@@ -296,8 +310,7 @@ h3 {
     border-radius: 0 0 20px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 5px;
+    gap: 3px;
 }
 
 .rating-stars {
@@ -315,6 +328,45 @@ h3 {
 .images {
     max-width: 100%;
     height: auto;
+}
+
+.h-row-container {
+    height: 84%;
+    width: 99%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+.h-row1 {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.h-row2 {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.tendances-row {
+    width: 100%;
+}
+
+.result-tendance {
+    border: 1px solid black;
+    height: 120px;
+    width: 300px;
+    border-radius: 20px;
 }
 
 /* TABLETTES */
