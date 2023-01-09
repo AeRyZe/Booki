@@ -174,7 +174,7 @@ p {
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .button {
@@ -221,11 +221,13 @@ p {
     margin-bottom: 40px;
 }
 
+/* ______________________ Hébergements & Tendances ______________________ */
+
 .result-container {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     gap: 30px;
 }
 
@@ -434,6 +436,50 @@ p {
     height: auto;
 }
 
+/* ______________________ Activités ______________________ */
+
+.activities-container {
+    height: 424px;
+    width: 95.5%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.result-activities {
+    height: 99%;
+    width: 282px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.activitie-top {
+    height: 87%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: clip;
+    object-fit: fill;
+}
+
+.activitie-bottom {
+    height: 13%;
+    width: 99.4%;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.activitie-bottom h3 {
+    margin-left: 25px;
+}
 /* TABLETTES */
 
 
