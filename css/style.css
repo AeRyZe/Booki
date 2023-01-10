@@ -379,6 +379,7 @@ p {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
+    flex-wrap: wrap;
 }
 
 .result-left1 {
@@ -439,17 +440,17 @@ p {
 /* ______________________ Activités ______________________ */
 
 .activities-container {
-    height: 424px;
-    width: 95.5%;
+    height: fit-content;
+    width: 95%;
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
 .result-activities {
-    height: 99%;
+    height: 424px;
     width: 282px;
     border-radius: 20px;
     display: flex;
@@ -478,7 +479,7 @@ p {
 }
 
 .activitie-bottom h3 {
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 /* ______________________ FOOTER ______________________ */
@@ -486,11 +487,12 @@ p {
 footer {
     display: flex;
     justify-content: center;
+    padding: 50px 50px 0 50px;
 }
 
 .footer-container {
     height: 152px;
-    width: 81%;
+    width: 100%;
     background-color: #D9D9D9;
     padding: 45px 70px;
 }
@@ -504,7 +506,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px;
 }
 
 .footer-column1,
@@ -515,7 +517,88 @@ footer {
     gap: 10px;
 }
 
-/* TABLETTES */
+/* ____________________________________________ TABLETTES ____________________________________________ */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .filters-buttons {
+        gap: 15px;
+    }
+
+    .result-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .result-container h3 {
+        font-size: 15px;
+    }
+
+    .result-container p {
+        font-size: 13px;
+    }
+
+    .hebergements-container {
+        width: 85%;
+    }
+
+    .populaires-container {
+        height: fit-content;
+        width: 86%;
+    }
+
+    .tendances-row {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .result-tendance {
+        width: 252px;
+    }
+
+    .result-left2 {
+        height: 96%;
+        width: 92%;
+    }
+
+    .result-right3 {
+        gap: 2.5px;
+    }
+
+    .result-activities {
+        height: 247px;
+        width: 162px;
+    }
+
+    .activitie-top {
+        height: 80%;
+    }
+
+    .activitie-bottom h3 {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .activities-container {
+        gap: 5px;
+    }
+
+    .images1 {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .images2 {
+        max-height: 100%;
+        width: auto;
+    }
+
+    .images2-bis {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* ____________________________________________ TÉLÉPHONES ____________________________________________ */
 
 
-/* TÉLÉPHONES */
