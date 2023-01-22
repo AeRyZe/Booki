@@ -19,6 +19,7 @@ body {
 
 article,
 section {
+    width: 100%;
     padding-left: 50px;
 }
 
@@ -38,11 +39,10 @@ nav img:hover {
 }
 
 nav div a {
-    font-size: 17px;
+    font-size: 16px;
     color: black;
     padding-left: 25px;
     padding-right: 25px;
-    margin-left: 15px;
 }
 
 nav div a:hover {
@@ -60,18 +60,19 @@ a:visited {
     color: inherit;
 }
 
-h1 {
+h1,
+h2 {
     font-size: 22px;
     font-weight: 950;
     margin-bottom: 10px;
 }
 
-h2 {
+h3 {
     font-size: 18px;
     font-weight: 950;
 }
 
-h3 {
+h4 {
     font-size: 16px;
     font-weight: 950;
 }
@@ -224,106 +225,67 @@ p {
     margin-bottom: 40px;
 }
 
-/* ______________________ Hébergements & Tendances ______________________ */
+/* ______________________ Hébergements ______________________ */
 
-.result-container {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+.hebergement-container {
+    background-color: #F2F2F2;
+    height: 536px;
+    width: 57%;
+    border-radius: 20px;
+    padding: 30px;
     margin-bottom: 60px;
-    gap: 30px;
 }
 
-.result-container h3 {
-    font-size: 16px;
+.hebergement-container h2 {
+    margin-bottom: 30px;
 }
 
-.result-container p {
-    font-size: 14px;
+#aplus {
+    margin-top: 40px;
 }
 
-.hebergements-container {
-    height: 492px;
-    width: 766px;;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    padding: 40px;
-}
-
-.hebergements-container h1 {
-    margin-bottom: 15px;
-}
-
-#h-h3 {
-    margin-top: 15px;
-}
-
-.populaires-container {
-    height: 492px;
-    width: 380px;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    padding: 40px 35px 40px 35px;
-    margin-right: 60px;
-}
-
-.title-icon {
+.hlogement-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.title-icon i {
-    color: #0065FC;
-}
-
-.result-hebergement {
-    height: 170px;
-    width: 210px;
+.hebergement-result {
+    height: 189px;
+    width: 28%;
+    min-width: 20%;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
 }
 
-.result-top1 {
-    height: 59%;
-    border-radius: 20px 20px 0 0;
-    display: flex;
+.hresult-top {
+    display:flex;
     justify-content: center;
     align-items: center;
-}
-
-.result-top2 {
-    height: 93%;
-    width: 96%;
+    height: 60%;
+    width: 100%;
     border-radius: 20px 20px 0 0;
     overflow: clip;
-    object-fit: fill;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.result-bottom1 {
-    height: 39%;
-    border-radius: 0 0 20px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.result-bottom2 {
+.hresult-top img {
+    width: 100%;
     height: 100%;
-    width: 90%;
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.hresult-bottom {
     display: flex;
     flex-direction: column;
-    gap: 3px;
-}
-
-.rating-stars {
-    display: flex;
+    justify-content: space-between;
+    height: 37%;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    padding: 5px 5px 0 5px;
 }
 
 .fullstar {
@@ -334,131 +296,97 @@ p {
     color: #F2F2F2;
 }
 
-.images1 {
-    max-width: 100%;
-    height: auto;
+.rating-stars {
+    display: flex;
 }
 
-.h-row-container {
-    height: 84%;
-    width: 99%;
+/* ______________________ Tendances ______________________ */
+
+.global-container {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: nowrap;
+    width: 92%;
+    gap: 20px;
+}
+
+.populaire-container {
+    height: 536px;
+    width: 29%;
     background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 30px
 }
 
-.h-row1 {
-    width: 100%;
+.title-icon {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
+    margin-bottom: 10px;
 }
 
-.h-row2 {
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 20px;
+.title-icon i {
+    color: #0065FC;
 }
 
-.tendances-row {
-    height: 88%;
-    width: 99%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-}
-
-.result-tendance {
-    height: 120px;
-    width: 340px;
+.populaire-result {
+    height: 134px;
+    width: 97.5%;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 5px;
     display: flex;
-    flex-wrap: wrap;
 }
 
-.result-left1 {
-    height: 99%;
-    width: 36%;
+.presult-left {
+    height: 100%;
+    width: 40%;
     border-radius: 20px 0 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.result-left2 {
-    height: 95%;
-    width: 95%;
-    border-radius: 20px 0 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: clip;
-    object-fit: fill;
 }
 
-.result-right1 {
-    height: 99%;
-    width: 59%;
-    border-radius: 0 20px 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.presult-left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-.result-right2 {
-    height: 90%;
-    width: 90%;
+.presult-right {
+    height: 87%;
+    width: 60%;
     border-radius: 0 20px 20px 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.result-right3 {
+.plogement-container {
+    height: 91%;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    margin-top: 5px;
-}
-
-.images2 {
-    max-height: 100%;
-    width: auto;
-}
-
-.images2-bis {
-    max-width: 100%;
-    height: auto;
+    justify-content: space-between;
 }
 
 /* ______________________ Activités ______________________ */
 
 .activities-container {
-    height: fit-content;
-    width: 95%;
+    height: 424px;
+    width: 92%;
     margin-top: 30px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
 }
 
 .result-activities {
-    height: 424px;
-    width: 282px;
+    height: 100%;
+    width: 260px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -473,12 +401,19 @@ p {
     object-fit: fill;
 }
 
+.activitie-top img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .activitie-bottom {
     height: 13%;
-    width: 99.4%;
+    width: 100%;
     border-radius: 0 0 20px 20px;
     display: flex;
     align-items: center;
+    color: black;
 }
 
 .activitie-bottom h3 {
@@ -522,6 +457,46 @@ footer {
 
 /* ____________________________________________ TABLETTES ____________________________________________ */
 
+@media screen and (min-width: 993px) and (max-width: 1240px) {
+    nav div a {
+        font-size: 14px;
+    }
+
+    h1,
+    h2 {
+    font-size: 20px;
+    font-weight: 950;
+    margin-bottom: 10px;
+    }
+
+    h3 {
+    font-size: 16px;
+    font-weight: 950;
+    }
+
+    h4 {
+    font-size: 14px;
+    font-weight: 950;
+    }
+
+    p {
+    font-size: 14px;
+    }
+
+    .result-activities {
+        height: 90%;
+        width: 210px;
+    }
+
+    .hresult-top {
+        height: 55%;
+    }
+
+    .hresult-bottom {
+        height: 41%;
+    }
+}
+
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .filters-buttons {
         gap: 15px;
@@ -533,11 +508,11 @@ footer {
     }
 
     .result-container h3 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .result-container p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .hebergements-container {
@@ -561,6 +536,7 @@ footer {
     .result-left2 {
         height: 96%;
         width: 92%;
+        object-fit: cover;
     }
 
     .result-right3 {
@@ -592,13 +568,7 @@ footer {
     }
 
     .images2 {
-        max-height: 100%;
-        width: auto;
-    }
-
-    .images2-bis {
-        height: 100%;
-        width: 100%;
+        object-fit: cover;
     }
 }
 
