@@ -62,23 +62,23 @@ a:visited {
 
 h1,
 h2 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 950;
     margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 950;
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 950;
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .barre-container {
@@ -417,7 +417,7 @@ p {
 }
 
 .activitie-bottom h3 {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 /* ______________________ FOOTER ______________________ */
@@ -426,6 +426,10 @@ footer {
     display: flex;
     justify-content: center;
     padding: 50px 50px 0 50px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .footer-container {
@@ -455,34 +459,9 @@ footer {
     gap: 10px;
 }
 
-/* ____________________________________________ TABLETTES ____________________________________________ */
+/* ____________________________________________ ORDINATEUR ____________________________________________ */
 
 @media screen and (min-width: 993px) and (max-width: 1240px) {
-    nav div a {
-        font-size: 14px;
-    }
-
-    h1,
-    h2 {
-    font-size: 20px;
-    font-weight: 950;
-    margin-bottom: 10px;
-    }
-
-    h3 {
-    font-size: 16px;
-    font-weight: 950;
-    }
-
-    h4 {
-    font-size: 14px;
-    font-weight: 950;
-    }
-
-    p {
-    font-size: 14px;
-    }
-
     .result-activities {
         height: 90%;
         width: 210px;
@@ -497,78 +476,43 @@ footer {
     }
 }
 
+/* ____________________________________________ TABLETTES ____________________________________________ */
+
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    .filters-buttons {
-        gap: 15px;
+    .global-container {
+        flex-direction: column;
     }
 
-    .result-container {
-        flex-direction: column;
+    .hebergement-container {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .populaire-container {
+        height: 208px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .plogement-container {
+        flex-direction: row;
         align-items: flex-start;
     }
 
-    .result-container h3 {
-        font-size: 16px;
-    }
-
-    .result-container p {
-        font-size: 14px;
-    }
-
-    .hebergements-container {
-        width: 85%;
-    }
-
-    .populaires-container {
-        height: fit-content;
-        width: 86%;
-    }
-
-    .tendances-row {
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    .result-tendance {
-        width: 252px;
-    }
-
-    .result-left2 {
-        height: 96%;
-        width: 92%;
-        object-fit: cover;
-    }
-
-    .result-right3 {
-        gap: 2.5px;
-    }
-
-    .result-activities {
-        height: 247px;
-        width: 162px;
-    }
-
-    .activitie-top {
-        height: 80%;
-    }
-
-    .activitie-bottom h3 {
-        font-size: 14px;
-        margin-top: 10px;
-        margin-left: 15px;
+    .populaire-result {
+        width: 196px;
     }
 
     .activities-container {
-        gap: 5px;
+        width: 90%;
     }
 
-    .images1 {
-        max-width: 100%;
-        height: auto;
+    .result-activities {
+        width: 160px;
     }
 
-    .images2 {
-        object-fit: cover;
+    .activitie-bottom h3 {
+        margin-left: 10px;
     }
 }
 
