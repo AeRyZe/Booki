@@ -568,18 +568,34 @@ footer a:hover {
 
 @media screen and (min-width: 250px) and (max-width: 768px) {
     header {
-        padding: 20px 20px 40px 20px;
+        padding: 20px 20px 40px 5px;
     }
 
     nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 40px;
+        gap: 30px;
+    }
+
+    nav div a {
+        padding: 0 40px 20px 40px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    nav div a:hover {
+        color: #0065FC;
+        font-weight: bolder;
+        border-top: 0;
+        padding-top: 0;
+        border-bottom: 3px solid #0065FC;
     }
 
     .shortcuts {
-        justify-content: space-between;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
     }
 
     article,
