@@ -19,7 +19,7 @@ body {
 
 article,
 section {
-    width: 100%;
+    width: 90%;
     padding-left: 50px;
 }
 
@@ -179,12 +179,22 @@ p {
     margin-bottom: 30px;
 }
 
+.filters-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.filters-container h2 {
+    margin-right: 10px;
+}
+
 .filters-buttons {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .button {
@@ -211,7 +221,7 @@ p {
 .i-container {
     height: 24px;
     width: 24px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #d9d9d9;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -311,7 +321,7 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    width: 92%;
+    width: 100%;
     gap: 20px;
 }
 
@@ -377,7 +387,7 @@ p {
 
 .activities-container {
     height: 424px;
-    width: 92%;
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 20px;
     display: flex;
@@ -430,7 +440,7 @@ p {
 footer {
     display: flex;
     justify-content: center;
-    padding: 50px 50px 0 50px;
+    padding: 50px 50px 0 35px;
 }
 
 footer a:hover {
@@ -439,7 +449,7 @@ footer a:hover {
 
 .footer-container {
     height: 152px;
-    width: 100%;
+    width: 85%;
     background-color: #F2F2F2;
     padding: 45px 70px;
 }
@@ -509,7 +519,7 @@ footer a:hover {
     }
 
     .activities-container {
-        width: 90%;
+        width: 98%;
     }
 
     .result-activities {
@@ -523,3 +533,118 @@ footer a:hover {
 
 /* ____________________________________________ TÉLÉPHONES ____________________________________________ */
 
+@media screen and (min-width: 250px) and (max-width: 768px) {
+    header {
+        padding: 20px 20px 40px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .shortcuts {
+        justify-content: space-between;
+    }
+
+    article,
+    section {
+        padding-left: 20px;
+    }
+
+    .barre-container {
+        width: 93%;
+    }
+
+    .information {
+        padding-left: 20px;
+    }
+
+    .filters-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filters-buttons {
+        justify-content: flex-start;
+    }
+
+    .button {
+        font-size: 14px;
+        width: 160px;
+    }
+
+    #hancre {
+        padding-left: 0;
+    }
+
+    .global-container {
+        flex-direction: column-reverse;
+    }
+
+    .populaire-container {
+        width: 100%;
+        border-radius: 0;
+        padding: 20px;
+    }
+
+    .hebergement-container {
+        background-color: white;
+        height: fit-content;
+        width: 100%;
+        border-radius: 0;
+        padding: 20px;
+    }
+
+    #aplus {
+        display: none;
+    }
+
+    .activities {
+        width: 95%;
+    }
+
+    .activities-container {
+        height: fit-content;
+        width: 92%;
+        flex-direction: column;
+    }
+
+    .hebergement-result {
+        width: 100%;
+    }
+
+    .hresult-top img {
+        width: 97%;
+    }
+
+    .result-activities {
+        height: 190px;
+        width: 100%;
+    }
+
+    .activitie-top {
+        height: 70%;
+    }
+
+    .activitie-bottom {
+        height: 30%;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    .footer-container {
+        height: fit-content;
+        width: 100%;
+        padding: 25px;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
