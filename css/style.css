@@ -6,7 +6,7 @@
 }
 
 header {
-    padding: 50px;
+    padding: 4% 5% 5% 4.2%;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 article,
 section {
     width: 93%;
-    padding-left: 50px;
+    padding-left: 4.5%;
 }
 
 nav {
@@ -446,7 +446,7 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 50px;
-    margin-left: 1%;
+    padding-left: 2%;
 }
 
 footer a:hover {
@@ -503,6 +503,10 @@ footer a:hover {
     .hebergement-container p {
         font-size: 12px;
     }
+
+    .footer-container {
+        width: 80%;
+    }
 }
 
 /* ____________________________________________ TABLETTES ____________________________________________ */
@@ -527,7 +531,7 @@ footer a:hover {
     }
 
     .hebergement-container {
-        width: 100%;
+        width: 88%;
         margin-bottom: 30px;
     }
 
@@ -565,12 +569,21 @@ footer a:hover {
     .activitie-bottom h3 {
         margin-left: 10px;
     }
+
+    footer {
+        padding-left: 0;
+    }
+
+    .footer-container {
+        width: 75%;
+    }
 }
 
 /* ____________________________________________ TÉLÉPHONES ____________________________________________ */
 
 @media screen and (min-width: 250px) and (max-width: 768px) {
     header {
+        width: 100%;
         padding: 20px 0 40px 0;
     }
 
@@ -608,9 +621,13 @@ footer a:hover {
         justify-content: center;
     }
 
-    article,
+    .information,
     section {
-        padding-left: 20px;
+        padding-left: 5%;
+    }
+
+    article {
+        padding-left: 4%;
     }
 
     .barre-container {
@@ -666,10 +683,6 @@ footer a:hover {
         position: relative;
     }
 
-    .information {
-        padding-left: 20px;
-    }
-
     .filters-container {
         flex-direction: column;
         align-items: flex-start;
@@ -695,17 +708,17 @@ footer a:hover {
     }
 
     .populaire-container {
-        width: 100%;
+        width: 99%;
         border-radius: 0;
-        padding: 20px;
+        padding: 4%;
     }
 
     .hebergement-container {
         background-color: white;
         height: fit-content;
-        width: 100%;
+        width: 99%;
         border-radius: 0;
-        padding: 20px;
+        padding: 4%;
     }
 
     #aplus {
@@ -713,7 +726,7 @@ footer a:hover {
     }
 
     .activities {
-        width: 95%;
+        width: 93%;
     }
 
     .activities-container {
@@ -745,13 +758,13 @@ footer a:hover {
 
     footer {
         width: inherit;
-        margin-left: 0;
+        padding-left: 0;
     }
 
     .footer-container {
         height: fit-content;
-        width: 100%;
-        padding: 25px;
+        width: 98%;
+        padding: 5%;
     }
 
     .footer-row {
